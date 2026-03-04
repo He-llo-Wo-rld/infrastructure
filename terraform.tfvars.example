@@ -1,0 +1,25 @@
+# terraform.tfvars.example
+# Copy: cp terraform.tfvars.example terraform.tfvars
+# NEVER commit terraform.tfvars to git!
+
+# --- General ---
+aws_region   = "eu-central-1"
+environment  = "production"
+project_name = "quizapp"
+
+# --- SSH ---
+# Your public IP for SSH access. Find it: curl ifconfig.me
+my_ip = "YOUR_IP_HERE/32"
+
+# Generate key first: ssh-keygen -t ed25519 -f ~/.ssh/quizapp-key
+ssh_public_key_path = "~/.ssh/quizapp-key.pub"
+key_pair_name       = "quizapp-key"
+
+# --- Database ---
+db_name     = "quizapp"
+db_username = "quizapp"
+db_password = "CHANGE_ME_USE_STRONG_PASSWORD_HERE"
+
+# --- S3 ---
+# Must be globally unique across all AWS accounts!
+s3_bucket_name = "quizapp-user-images-CHANGE-ME"
