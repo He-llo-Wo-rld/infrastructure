@@ -256,7 +256,6 @@ terraform/
 ├── database.tf             # RDS PostgreSQL
 ├── storage.tf              # S3 Bucket
 ├── iam.tf                  # IAM Role (Backend → S3 access)
-├── cache.tf                # Stub (Redis runs in Docker now)
 ├── variables.tf            # Input variables
 ├── outputs.tf              # Output values
 ├── terraform.tfvars        # Secret values (NEVER commit!)
